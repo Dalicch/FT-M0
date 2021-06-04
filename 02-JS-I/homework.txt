@@ -1,0 +1,9 @@
+Variables: es una especie de caja que guarda algún valor.
+
+Strings: son cajas que contienen texto y van entre comillas.
+
+Funciones: sirven para hacer algo con las variables, calcularlas, cambiarlas etc.
+
+Declaraciones if: controlan el flujo en una operación para determinar si algo es true.
+
+Valores booleanos: pueden ser "true" or "false" ya que se basan en la lógica booleana que esta determinada por el código binario que puede ser 0 o 1.

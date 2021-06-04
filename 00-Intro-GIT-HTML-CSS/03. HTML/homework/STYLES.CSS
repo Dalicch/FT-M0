@@ -1,0 +1,15 @@
+<style> 
+		h1 {color: skyblue;}
+		img {width: 400px;}
+		#thirdDiv {
+			height: 600px;
+			width: 500px;
+			background: skyblue;}
+		#spanId {
+			font-size: 18px;
+			margin: 50px;}
+		#thirdDiv {
+			padding: 50px;
+			border: solid 10px yellowgreen;}
+
+	</style>
