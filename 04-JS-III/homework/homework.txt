@@ -1,0 +1,1 @@
+arrays : son listas que contienen elementos, p ej. animales [perro, gato, vaca, caballo]

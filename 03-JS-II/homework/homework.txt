@@ -1,0 +1,2 @@
+* `for` es un iterador, harà una funcion ciclicamente hasta que la condicion se cumpla
+* `&&`, `||`, `!` son operadores que nos ayudan a aplicar una condicion a  mas de un valor al mismo tiempo.

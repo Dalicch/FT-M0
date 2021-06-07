@@ -1,0 +1,14 @@
+* Objetos
+	* Propiedades
+	* Métodos
+	* Bucle `for…in`
+	* Notación de puntos vs notación de corchetes
+
+Objetos. Si, los arrays, son cajones, los objetos, son cajoneras, armarios.
+
+metodos. Los metodos son funciones alojadas en objetos.
+
+Bucle 'for in'. Es un bucle que nos permite tomar una variable y compararla con cada objeto dentro de un array para poder llegar a un resultado.
+
+Notación de puntos vs notación de corchetes: son dos maneras que existen de poder ingresar a los valores dentro de un objeto.
+
