@@ -1,0 +1,3 @@
+Funciones Callback
+
+son una manera de poder utilizar funciones que fueron creadas previamente en funciones nuevas.
