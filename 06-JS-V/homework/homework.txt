@@ -1,0 +1,6 @@
+* `prototype`
+* _Constructors_ (de Clases)
+
+Un prototipo es un repositorio de funciones metodo que pueden ser invocadas desde un objeto
+cosntructor es una plantilla con la que podemos crear objetos de una misma clase, lo que nos evita ser redundantes y nos ahorra espacio.
+
