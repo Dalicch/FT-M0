@@ -41,7 +41,7 @@ switch (idioma) {
   case "mandarin": return "Ni Hao!"
   case "ingles": return "Hello!"
   default: return "Hola!"
-}
+} 
 }
 
 /*
@@ -130,7 +130,7 @@ function esPrimo(numero) {
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
   if (numero < 2) {return false}
-    for (var i = 2; i < numero; i++) {
+    for (var i = 2; i < numero/2; i++) {
       if (numero % i === 0 ) {return false}
 
     }

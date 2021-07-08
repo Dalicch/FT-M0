@@ -4,7 +4,12 @@ function mayuscula(nombre) {
   //La función recibe un nombre y debe devolver el mismo que recibe pero con su primer letra en mayúscula
   //ej: Recibe "mario" ----> Devuelve "Mario"
   //Tu código:
-  return nombre.charAt(0).toUpperCase() + nombre.slice(1)
+  var pl = nombre.charAt(0).toUpperCase()
+  var rest = nombre.slice(1)
+
+  return pl + rest
+
+  //return nombre.charAt(0).toUpperCase() + nombre.slice(1)
 
 }
 
@@ -26,8 +31,15 @@ function sumarArray(numeros, cb) {
   // Pasa el resultado a `cb`
   // No es necesario devolver nada
   //Tu código: 
-  var suma = numeros.reduce(function(acumulador, elemento){return acumulador + elemento},0)
-  cb (suma)
+ var suma = 0
+ for (var i in numeros) {
+   suma = suma +numeros[i] }
+  
+ cb(suma)
+
+
+ // var suma = numeros.reduce(function(acumulador, elemento){return acumulador + elemento},0)
+ // cb (suma)
 
 }
 
@@ -44,11 +56,17 @@ function map(array, cb) {
   // Itera sobre cada valor en "array", pásalo a `cb` y luego ubicar el valor devuelto por `cb` en un nuevo array
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:
+  var newarray = []
+for (var i in array) {
+  newarray.push (cb (array[i]))
+}
+return newarray
 
- var newarray =array.map(function (elemento) {
-  return cb(elemento)
- })
- return newarray
+
+ //var newarray =array.map(function (elemento) {
+ // return cb(elemento)
+ //})
+ //return newarray
 
 }
 

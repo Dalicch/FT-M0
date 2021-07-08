@@ -61,6 +61,7 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
+
   if (x==y) {return true}
   return false
 }
@@ -106,8 +107,12 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código: 
-  if (num%2==0) {return false}
-    return true
+  
+  if (num%2 !== 0 ) return true
+    return false
+
+  //if (num%2==0) {return false}
+    //return true
 }
 
 function elevarAlCuadrado(num) {
@@ -212,10 +217,16 @@ function esVocal(letra){
   //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   //Escribe tu código aquí
-if (letra.length>1) {return "Dato incorrecto"}
-  if(letra== a||e||i||o||u) {return "Es vocal"}
-    return false
-}
+var vocales = [ "a", "e", "i" ,"o", "u"]
+  if(vocales.includes(letra)) return "Es vocal"
+    return "Dato incorrecto"
+
+   }
+
+//if (letra.length>1) {return "Dato incorrecto"}
+  //if(letra== a||e||i||o||u) {return "Es vocal"}
+    //return false
+
 
 
 

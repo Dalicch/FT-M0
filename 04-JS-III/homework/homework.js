@@ -27,9 +27,15 @@ function incrementarPorUno(array) {
   // y devuelve el array
   // Tu código:
 var newarray = []
-for (var i = 0; i<array.length; i ++) 
-  { newarray.push(array[i]+1) }
+for (var e in array) {
+  newarray.push(array[e]+1)
+}
 return newarray
+
+//var newarray = []
+//for (var i = 0; i<array.length; i ++) 
+  //{ newarray.push(array[i]+1) }
+//return newarray
 }
 
 
@@ -39,8 +45,10 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-  return newarray = array.concat(elemento)}
-
+  //return newarray = array.concat(elemento)}
+array.push(elemento)
+return array
+}
 
 function agregarItemAlComienzoDelArray(array, elemento) {
   // Añade el "elemento" al comienzo del array
@@ -58,7 +66,17 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  return palabras.join(' ')
+var newstring = ""
+for (var p = 0; p < palabras.length ; p ++) {
+  if (palabras[p] === palabras[palabras.length-1]) {
+      newstring = newstring + palabras[p]
+    }
+    else{
+        newstring = newstring + palabras[p] + " "
+    }}
+ return newstring
+
+ // return palabras.join(' ')
 }
   
 
@@ -66,10 +84,9 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-  for (var i = 0; i < array.length; i++) {
-    if (elemento === array[i]) 
-      return (true)
-    
+  
+  for (var i in array) {
+    if (elemento === array[i]) {return (true)}
   }
   return false
 }
@@ -79,8 +96,15 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
-  var total = numeros.reduce((a,b)=> a +b,0)
-  return total
+var total = 0
+for(var i in numeros) {
+  total = total + numeros[i]
+}
+return total
+
+
+//var total = numeros.reduce((a,b)=> a +b,0)
+  //return total
 }
 
 
@@ -88,9 +112,17 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
-  var arraylenght = resultadosTest.length
-  var total = resultadosTest.reduce((a,b) => a + b,0)
-  return total/arraylenght
+  var suma = 0
+  for (var i in resultadosTest) {
+    suma = suma + resultadosTest[i]
+  }
+  return suma/resultadosTest.length
+
+
+
+  //var arraylenght = resultadosTest.length
+ // var total = resultadosTest.reduce((a,b) => a + b,0)
+ //return total/arraylenght
 }
 
 
@@ -154,6 +186,7 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
+
   var num = n.toString()
   if(num.charAt (0) === "9"){
     return true
@@ -179,12 +212,7 @@ function mesesDelAño(array) {
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
   
-      //else return "No se encontraron los meses pedidos"
-      //switch (array [i]) {
-        //case array [i] === Enero: newarray.push (array i)
-        //case array [i] === Marzo: newarray.push (array i)
-        //case array [i] === Noviembre: newarray.push (array i)
-        //default: "No se encontraron los meses pedidos"
+     
         var newarray = []
         for(let i=0; i<array.length ; i++) {
           if (array [i] === "Enero" || array [i] === "Marzo" || array [i] === "Noviembre") {
